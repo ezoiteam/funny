@@ -1,1 +1,1 @@
-window.ImageList = ['src/images/ParticleSmoke.png']
+window.ImageList = ["src/images/ParticleSmoke.png", "src/images/ezoi.png"]

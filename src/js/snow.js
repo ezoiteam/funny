@@ -1,9 +1,11 @@
+var velocity = parseFloat(prompt("Input velocity", 1));
+var gravity = parseFloat(prompt("Input gravity", 0.5));
 Particle3D=function(material){
 	THREE.Particle.call(this,material);
-	this.velocity=new THREE.Vector3(0,0,0);//速度;
+	this.velocity=new THREE.Vector3(0,0,velocity);//速度;
 	this.velocity.rotateX(100);//旋转;
-	this.gravity=new THREE.Vector3(0,0,1);//加速度;
-	this.drag=0.5;//速度相乘系数;
+	this.gravity=new THREE.Vector3(0,0,gravity);//加速度;
+	this.drag=1;//速度相乘系数;
 };
 //Particle:粒子;
 //prototype:原形;
